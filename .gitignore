@@ -1,0 +1,19 @@
+# Environment files (future safety)
+.env
+*.env
+
+# Node / build stuff (if you ever use it)
+node_modules/
+dist/
+build/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# IDE files
+.vscode/
+.idea/
