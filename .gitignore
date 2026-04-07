@@ -1,19 +1,105 @@
-# Environment files (future safety)
-.env
-*.env
+# =========================
+# WORDPRESS
+# =========================
 
-# Node / build stuff (if you ever use it)
-node_modules/
-dist/
-build/
+# Core
+wp-admin/
+wp-includes/
 
-# OS junk
-.DS_Store
-Thumbs.db
+# Content (ignore all by default)
+wp-content/*
+
+# Allow themes & plugins
+!wp-content/themes/
+!wp-content/plugins/
+!wp-content/themes/**
+!wp-content/plugins/**
+
+# Ignore uploads (VERY important)
+wp-content/uploads/
+
+# Cache / temp
+wp-content/cache/
+wp-content/backups/
+wp-content/upgrade/
+
+# Logs
+*.log
+error_log
+debug.log
+
+# Config (sensitive)
+wp-config.php
+
+# =========================
+# MEDIAWIKI
+# =========================
+
+# Uploads (user content)
+images/
+images/**
+
+# Cache
+cache/
+mw-cache/
+tmp/
+
+# Generated files
+LocalSettings.php
+composer.lock
+
+# MediaWiki extensions (optional: track if custom)
+extensions/*
+!extensions/README
+!extensions/**/
+
+# Skins (optional: track if custom)
+skins/*
+!skins/README
+!skins/**/
+
+# Vendor (Composer dependencies)
+vendor/
 
 # Logs
 *.log
 
-# IDE files
+# =========================
+# DATABASE / BACKUPS
+# =========================
+*.sql
+*.gz
+*.zip
+*.tar
+*.tar.gz
+*.bak
+
+# =========================
+# ENV / SECRETS
+# =========================
+.env
+.env.*
+*.key
+
+# =========================
+# NODE / BUILD TOOLS
+# =========================
+node_modules/
+package-lock.json
+yarn.lock
+
+# =========================
+# OS / EDITOR FILES
+# =========================
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.idea/
 .vscode/
-.idea/
+
+# =========================
+# MISC
+# =========================
+*.tmp
+*.cache
