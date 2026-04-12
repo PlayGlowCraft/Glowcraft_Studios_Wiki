@@ -1,6 +1,0 @@
-# Some third-party PHP libraries installed via Composer contain JavaScript files - don't check them.
-**/vendor
-
-# WebdriverIO configs
-**/wdio.conf.js
-**/wdio.conf.*.js
