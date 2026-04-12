@@ -1,37 +1,4 @@
 # =========================
-# WORDPRESS
-# =========================
-
-# Core
-wp-admin/
-wp-includes/
-
-# Content (ignore all by default)
-wp-content/*
-
-# Allow themes & plugins
-!wp-content/themes/
-!wp-content/plugins/
-!wp-content/themes/**
-!wp-content/plugins/**
-
-# Ignore uploads (VERY important)
-wp-content/uploads/
-
-# Cache / temp
-wp-content/cache/
-wp-content/backups/
-wp-content/upgrade/
-
-# Logs
-*.log
-error_log
-debug.log
-
-# Config (sensitive)
-wp-config.php
-
-# =========================
 # MEDIAWIKI
 # =========================
 
